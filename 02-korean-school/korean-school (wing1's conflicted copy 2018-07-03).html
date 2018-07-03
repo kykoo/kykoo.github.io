@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-07-03 Tue 23:13 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>엑시터 민트교회 한글학교</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="K.Y.Koo" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/worg_full.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">엑시터 민트교회 한글학교</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org56af505">연혁</a></li>
+<li><a href="#org8252863">구성원</a>
+<ul>
+<li><a href="#orgdd21982">선생님</a></li>
+<li><a href="#orgbbc81f7">반</a></li>
+</ul>
+</li>
+<li><a href="#orga4c3d60">수업 내용 상세</a>
+<ul>
+<li><a href="#org43f21a1">0반</a></li>
+<li><a href="#org1b82b77">1반</a></li>
+<li><a href="#org9073440">2반</a></li>
+<li><a href="#orgb35e61a">3반</a></li>
+</ul>
+</li>
+<li><a href="#org3d5c10b">사진들</a>
+<ul>
+<li><a href="#orgdbaf1d1">2015년 수업사진</a></li>
+<li><a href="#org40c2442">2015년 제1회 한글학교축제</a></li>
+<li><a href="#orgff2d883">2016년 제2회 한글학교축제</a></li>
+<li><a href="#org413059a">2017년 제3회 한글학교축제</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org56af505" class="outline-2">
+<h2 id="org56af505">연혁</h2>
+<div class="outline-text-2" id="text-org56af505">
+<ul class="org-ul">
+<li>Exeter 한글학교는 2015년 5월에 설립되어, 매주 일요일 오후 1시부터 2시까지 저학년 학생들을 대상으로 한글을 가르치고 있습니다.</li>
+<li>Exeter 한글학교는 Exeter Mint Methodiest Church 한인성도를 주축으로 운영되고 있으며, 장소는 Exeter Mint Methodiest Church입니다.</li>
+<li>2018년 6월 현재 총 6분의 선생님, 7명의 학생, 4개 반으로 운영되고 있습니다.</li>
+<li>참고로, University of Exeter의 한인학생회는 동 대학의 외국인학생(성인)을 대상으로 한글학교를 별도로 운영하고 있습니다.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8252863" class="outline-2">
+<h2 id="org8252863">구성원</h2>
+<div class="outline-text-2" id="text-org8252863">
+<ul class="org-ul">
+<li>2018년 6월 현재</li>
+</ul>
+</div>
+
+<div id="outline-container-orgdd21982" class="outline-3">
+<h3 id="orgdd21982">선생님</h3>
+<div class="outline-text-3" id="text-orgdd21982">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">구성원</th>
+<th scope="col" class="org-left">직책</th>
+<th scope="col" class="org-left">비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">이미경</td>
+<td class="org-left">교장선생님</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">김남희</td>
+<td class="org-left">교감선생님</td>
+<td class="org-left">총무담당, 2반담당</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">김안나</td>
+<td class="org-left">선생님</td>
+<td class="org-left">0반담당</td>
+</tr>
+
+<tr>
+<td class="org-left">변선우</td>
+<td class="org-left">선생님</td>
+<td class="org-left">0반담당</td>
+</tr>
+
+<tr>
+<td class="org-left">김송이</td>
+<td class="org-left">선생님</td>
+<td class="org-left">1반담당</td>
+</tr>
+
+<tr>
+<td class="org-left">정인애</td>
+<td class="org-left">선생님</td>
+<td class="org-left">2반담당</td>
+</tr>
+
+<tr>
+<td class="org-left">장대희</td>
+<td class="org-left">선생님</td>
+<td class="org-left">3반담당</td>
+</tr>
+
+<tr>
+<td class="org-left">구기영</td>
+<td class="org-left">선생님</td>
+<td class="org-left">웹담당, 3반 보조</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-orgbbc81f7" class="outline-3">
+<h3 id="orgbbc81f7">반</h3>
+<div class="outline-text-3" id="text-orgbbc81f7">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">수업내용</th>
+<th scope="col" class="org-right">학생수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">0반</td>
+<td class="org-left">입문: 동요 배우기/동화 듣기</td>
+<td class="org-right">3</td>
+</tr>
+
+<tr>
+<td class="org-left">1반</td>
+<td class="org-left">자음/모음</td>
+<td class="org-right">2</td>
+</tr>
+
+<tr>
+<td class="org-left">2반</td>
+<td class="org-left">단어/문장</td>
+<td class="org-right">5</td>
+</tr>
+
+<tr>
+<td class="org-left">3반</td>
+<td class="org-left">글쓰기</td>
+<td class="org-right">3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga4c3d60" class="outline-2">
+<h2 id="orga4c3d60">수업 내용 상세</h2>
+<div class="outline-text-2" id="text-orga4c3d60">
+</div><div id="outline-container-org43f21a1" class="outline-3">
+<h3 id="org43f21a1">0반</h3>
+<div class="outline-text-3" id="text-org43f21a1">
+<ul class="org-ul">
+<li>한글입문반</li>
+<li>의성어, 의태어, 한국동요를 배우고</li>
+<li>기초한글 및 동화책</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1b82b77" class="outline-3">
+<h3 id="org1b82b77">1반</h3>
+<div class="outline-text-3" id="text-org1b82b77">
+<ul class="org-ul">
+<li>한글 자모음 및 조합</li>
+<li>한글 읽기 및 쓰기</li>
+<li>단어배우기</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9073440" class="outline-3">
+<h3 id="org9073440">2반</h3>
+<div class="outline-text-3" id="text-org9073440">
+<ul class="org-ul">
+<li>단어/ 문장 쓰기</li>
+<li>책 읽고 이해하기</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb35e61a" class="outline-3">
+<h3 id="orgb35e61a">3반</h3>
+<div class="outline-text-3" id="text-orgb35e61a">
+<ul class="org-ul">
+<li>한글 읽기 토론</li>
+<li>한글 쓰기</li>
+<li>한글 논술 (생각하고 추론하기)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org3d5c10b" class="outline-2">
+<h2 id="org3d5c10b">사진들</h2>
+<div class="outline-text-2" id="text-org3d5c10b">
+</div><div id="outline-container-orgdbaf1d1" class="outline-3">
+<h3 id="orgdbaf1d1">2015년 수업사진</h3>
+<div class="outline-text-3" id="text-orgdbaf1d1">
+
+<div class="figure">
+<p><img src="1-events/classes/2015/KakaoTalk_Photo_2018-07-02-09-39-17.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-39-17.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 1: </span>수업1</p>
+</div>
+
+
+<div class="figure">
+<p><img src="1-events/classes/2015/KakaoTalk_Photo_2018-07-02-09-45-54.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-45-54.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 2: </span>수업2</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org40c2442" class="outline-3">
+<h3 id="org40c2442">2015년 제1회 한글학교축제</h3>
+<div class="outline-text-3" id="text-org40c2442">
+<ul class="org-ul">
+<li><a href="https://photos.app.goo.gl/wGYLLcQMU9JSqUTp7">Google Photo Album</a></li>
+</ul>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/KakaoTalk_Photo_2018-07-02-09-39-57.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-39-57.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 3: </span>개회</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo02.jpg" alt="photo02.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 4: </span>한글을 배워야 하는 이유 by Richard</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo03.jpg" alt="photo03.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 5: </span>1반 동요발표회</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo04.jpg" alt="photo04.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 6: </span>2반 동화책 읽기</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo05.jpg" alt="photo05.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 7: </span>한국단어 퀴즈</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo06.jpg" alt="photo06.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 8: </span>3반 소개</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo07.jpg" alt="photo07.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 9: </span>미래의 꿈 (혜린이)</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo08.jpg" alt="photo08.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 10: </span>미래의 꿈 (창민이)</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo09.jpg" alt="photo09.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 11: </span>어른들을 위한 한글 낱말 퀴즈</p>
+</div>
+
+<div class="figure">
+<p><img src="1-events/school-festival/2015/photo10.jpg" alt="photo10.jpg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 12: </span>시상</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgff2d883" class="outline-3">
+<h3 id="orgff2d883">2016년 제2회 한글학교축제</h3>
+<div class="outline-text-3" id="text-orgff2d883">
+<ul class="org-ul">
+<li><a href="https://photos.app.goo.gl/R2a2T6FJcTR6MST39">Google Photo Album</a></li>
+</ul>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2016/KakaoTalk_Photo_2018-07-02-09-43-11.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-43-11.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 13: </span>상장수여1</p>
+</div>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2016/KakaoTalk_Photo_2018-07-02-09-43-58.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-43-58.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 14: </span>상장수여2</p>
+</div>
+
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2016/KakaoTalk_Photo_2018-07-02-09-44-15.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-44-15.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 15: </span>상장수여3</p>
+</div>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2016/KakaoTalk_Photo_2018-07-02-09-44-55.jpeg" alt="KakaoTalk_Photo_2018-07-02-09-44-55.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 16: </span>간식시간</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org413059a" class="outline-3">
+<h3 id="org413059a">2017년 제3회 한글학교축제</h3>
+<div class="outline-text-3" id="text-org413059a">
+<ul class="org-ul">
+<li><a href="https://photos.app.goo.gl/qT7QL9Q9mFBEQQne6">Google Photo Album</a></li>
+</ul>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2017/KakaoTalk_Photo_2017-06-18-21-46-07.jpeg" alt="KakaoTalk_Photo_2017-06-18-21-46-07.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 17: </span>퀴즈</p>
+</div>
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2017/KakaoTalk_Photo_2017-06-18-21-46-40.jpeg" alt="KakaoTalk_Photo_2017-06-18-21-46-40.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 18: </span>눈가리고 그리기 게임 (1/2)</p>
+</div>
+
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2017/KakaoTalk_Photo_2017-06-18-21-46-49.jpeg" alt="KakaoTalk_Photo_2017-06-18-21-46-49.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 19: </span>눈가리고 그리기 게임 (2/2)</p>
+</div>
+
+
+
+<div class="figure">
+<p><img src="1-events/school-festival/2017/KakaoTalk_Photo_2017-06-18-21-48-59.jpeg" alt="KakaoTalk_Photo_2017-06-18-21-48-59.jpeg" width="600px alt=&quot;image&quot;" />
+</p>
+<p><span class="figure-number">Figure 20: </span>"무궁화 꽃이 피었습니다" 게임</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: K.Y.Koo (<a href="mailto:k.y.koo@exeter.ac.uk">k.y.koo@exeter.ac.uk</a>)</p>
+<p class="date">Date: 2017-04-22 Sat 00:00</p>
+<p class="creator">Emacs 25.1.1 (Org mode 9.0)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
